@@ -1,0 +1,225 @@
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    min-height: 100vh;
+}
+.navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+    display: inline;
+    color: black;
+    margin-left: 40px;
+}
+li a{
+    color: black;
+    font-size: 18px;
+     margin-right: 25px;
+}
+li a:hover{
+    color:#007bff;
+}
+.login{
+    border-radius: 4px;
+    background: whitesmoke;
+    color:black;
+    padding: 7px 10px;
+    border: none;
+}
+.Signup{
+    border-radius: 4px;
+    background-color: blue;
+    color: white;
+    padding: 7px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+}
+button{
+    margin-left:50px;
+}
+.meeting img{
+    width: 40rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 1rem;
+    display: block;
+    margin-top: 20px;
+}
+.meeting{
+    display: flex;
+    gap: 2rem;
+}
+.ourcompany{
+    text-align: center;
+}
+.information{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+h2,p{
+    padding-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blue{
+    background-color:blue;
+    color: white!important;
+    width:330px;
+    letter-spacing: .2rem;
+    margin-top: 20px;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+    border-radius: .3rem;
+    font-size: 13px;
+}
+.information2{
+    background-color: whitesmoke;
+    margin-top: 20px;
+    padding: 2rem;
+}
+.information3{
+    background-color: whitesmoke;
+    margin-top: 50px;
+    padding: 2rem;
+}
+.information4{
+    background-color: white;
+    margin-top: 50px;
+    padding: 2rem;
+}
+.footer{
+    background-color: blue;
+    margin-top: 30px;
+    padding: 2rem;
+}
+.foottext{
+    color: white;
+}
+.logo{
+    width:20%;
+}
+.contact{
+    margin-top: 10px;
+}
+.number{
+    color: white;
+    margin-top: -30px;
+    margin-left: 1rem;
+    font-size: 13px;
+}  
+table{
+    width: 100%;
+    margin: 1rem;
+    padding-right: 5rem;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+}
+td{
+    border: none;
+    padding:10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.icons{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    gap: 1rem;
+}
+.icon1,
+.icon2,
+.icon3,
+.icon4{
+    color: blue;
+    background-color: blue;
+}
+.logo1{
+    color: white;
+    width: 20%;
+}
+.copyright{
+    color: white;
+    margin-right: 5rem;
+    gap: 10rem;
+    justify-content: center;
+    display: flex;
+}
+.foottext2{
+    position: absolute;
+    right:0;
+}
+form{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    align-items: center;
+    gap:.4rem;
+    text-shadow: 0 1px 2px #000;
+    flex-direction: column;
+}
+input:focus{
+    outline: 0;
+    border: 1px solid blue;
+}
+input{
+    height:30px
+}
+.login1{
+    border-radius: 4px;
+    background: blue;
+    color: white;
+    padding: 7px 10px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+.forgot{
+    font-weight: 400;
+    color: black;
+}
+.boss{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    align-items: center;
+    gap:.4rem;
+    text-shadow: 0 1px 2px #000;
+    box-shadow: 0 0 10px black;
+    padding: 30px 20px 35px 20px;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 100vh;
+    width: 600px;
+    margin-left: 350px;
+}
+label{
+    padding-right: 2rem;
+}
+.for{
+    padding-right: 22rem;
+    gap: 1rem;
+}
