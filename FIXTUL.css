@@ -2,6 +2,7 @@
 padding: 0;
 margin: 0;
 text-decoration: none;
+box-sizing: border-box;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -66,15 +67,16 @@ button{
     display: flex;
     gap: 2rem;
 }
-.ourcompany{
-    text-align: center;
+.OurCompany{
+    position: relative;
+    margin-top: 80px;
+
 }
 .information{
     padding: 2rem;
     display: flex;
-    gap: 2rem;
-    justify-content: space-between;
-    flex-direction: column;
+    gap: 5rem;
+    justify-content: space-around;
 }
 h2,p{
     padding-left: 2rem;
@@ -96,16 +98,22 @@ h2,p{
     background-color: whitesmoke;
     margin-top: 20px;
     padding: 2rem;
+    display: flex;
+    gap: 5rem;
 }
 .information3{
     background-color: whitesmoke;
     margin-top: 50px;
     padding: 2rem;
+    display: flex;
+    gap: 5rem;
 }
 .information4{
     background-color: white;
     margin-top: 50px;
     padding: 2rem;
+    display: flex;
+    gap: 5rem;
 }
 .footer{
     background-color: blue;
@@ -176,8 +184,9 @@ form{
     display: flex;
     justify-content: center;
     font-size: 1.2em;
+    max-width: 100%;
     align-items: center;
-    gap:.4rem;
+    gap:.2rem;
     text-shadow: 0 1px 2px #000;
     flex-direction: column;
 }
@@ -186,7 +195,9 @@ input:focus{
     border: 1px solid blue;
 }
 input{
-    height:30px
+    border: 1px solid black;
+    height:30px;
+    width:250px;
 }
 .login1{
     border-radius: 4px;
@@ -211,9 +222,10 @@ input{
     box-shadow: 0 0 10px black;
     padding: 30px 20px 35px 20px;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 3px;
     height: 100vh;
     width: 600px;
+    margin-top: 20px;
     margin-left: 350px;
 }
 label{
@@ -223,8 +235,138 @@ label{
     padding-right: 22rem;
     gap: 1rem;
 }
+.fix{
+    position: relative;
+    margin-top: 100px;
+}
+.delivery{
+    position: relative;
+    margin-top: 100px;
+}
+.visit{
+    position: relative;
+    margin-top: 100px; 
+}
+@media screen and (max-width:640px) {
+    body{
+        max-width:100%;
+    }
+    img{
+         max-width: 300px;
+         height:auto;
+         margin: auto;
+    }
+    .OurCompany,
+    .fix,
+    .delivery,
+    .visit{
+        position: relative;
+        margin-top: 50px;
+    }
+    .navdiv li{
+        display: inline;
+       margin-left: 5px;
+       margin-right: 5px;
+        justify-content: space-around;
+    }
+    .icons img{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        gap: 1rem;
+    }
+    .form{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+        gap:.2rem;
+        text-shadow: 0 1px 2px #000;
+        flex-direction: column;
+    }
+    .boss{
+        width: 400px;
+    }
+    .for{
+        padding-left: 19rem;
+    }}
+ @media screen and (max-width:768px){
+        body{
+            max-width:100%;
+        }
+        img{
+             max-width: 200px;
+             height:auto;
+             margin: auto;
+        }
+        .logo{
+            width:18%;
+        }
+        .OurCompany,
+        .fix,
+        .delivery,
+        .visit{
+            position: relative;
+            margin-top: 50px;
+        }
+        .navbar{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:1rem;
+        }
+        .navdiv li{
+            display: inline;
+           margin-left: 5px;
+           margin-right: 5px;
+            justify-content: space-between;
+        }
+        .icons img{
+            display: flex;
+            width: 20px;
+            height: 20px;
+            gap: 1rem;
+        }
+        .form{
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 1.2em;
+            gap:.2rem;
+            text-shadow: 0 1px 2px #000;
+            flex-direction: column;
+        }
+        .boss{
+            width: 400px;
+        }
+        .for{
+            padding-left: 19rem;
+        }
+        button{
+            margin-left: 20px;
+        }
+        .Signup{
+            border-radius: 4px;
+            background-color: blue;
+            color: white;
+            padding: 5px 5px;
+            margin-left: 2px;
+            cursor: pointer;
+            border: none;
+            height: 40px;
+            margin-right: 1rem;
+        }}
+        @media screen and (min-width:162px){
 
+    
+    
+    
+    
+    
+    
 
+    }
 
 
 
