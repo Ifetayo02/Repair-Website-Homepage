@@ -3,6 +3,8 @@ padding: 0;
 margin: 0;
 text-decoration: none;
 box-sizing: border-box;
+font-size: 1rem;
+overflow-x: hidden;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -57,7 +59,7 @@ button{
     margin-left:50px;
 }
 .meeting img{
-    width: 40rem;
+    width: 600px;
     border-top-right-radius: 2rem;
     border-bottom-left-radius: 1rem;
     display: block;
@@ -75,11 +77,12 @@ button{
 .information{
     padding: 2rem;
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     justify-content: space-around;
+    width:100vw;
 }
 h2,p{
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 .blue{
@@ -95,30 +98,35 @@ h2,p{
     font-size: 13px;
 }
 .information2{
-    background-color: whitesmoke;
     margin-top: 20px;
-    padding: 2rem;
+    background-color: whitesmoke;
     display: flex;
-    gap: 5rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap:2rem;
+    width:100vw;
 }
 .information3{
+    margin-top: 20px;
     background-color: whitesmoke;
-    margin-top: 50px;
-    padding: 2rem;
+    padding: 2rem 0 2rem 2rem;
     display: flex;
-    gap: 5rem;
+    gap:2rem;
 }
 .information4{
     background-color: white;
     margin-top: 50px;
-    padding: 2rem;
+    padding: 2rem 0 2rem 2rem;
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
+    width:100vw;
 }
 .footer{
     background-color: blue;
     margin-top: 30px;
     padding: 2rem;
+    width: 100vw;
+    overflow-x: hidden;
 }
 .foottext{
     color: white;
@@ -154,17 +162,14 @@ a:hover{
 }
 .icons{
     display: flex;
-    width: 20px;
+    width: 200px;
     height: 20px;
-    gap: 1rem;
+    gap: 2rem;
+    color: white;
+    margin-left: 7rem;
+    overflow-x: hidden;
 }
-.icon1,
-.icon2,
-.icon3,
-.icon4{
-    color: blue;
-    background-color: blue;
-}
+
 .logo1{
     color: white;
     width: 20%;
@@ -172,7 +177,7 @@ a:hover{
 .copyright{
     color: white;
     margin-right: 5rem;
-    gap: 10rem;
+    gap: 2rem;
     justify-content: center;
     display: flex;
 }
@@ -238,31 +243,31 @@ label{
 .fix{
     position: relative;
     margin-top: 100px;
+    background-color: inherit;
+    
 }
 .delivery{
     position: relative;
     margin-top: 100px;
+    background-color: inherit;
 }
 .visit{
     position: relative;
     margin-top: 100px; 
 }
-@media screen and (max-width:640px) {
+@media (min-width:320px) and (max-width:768px) {
     body{
-        max-width:100%;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
     }
     img{
-         max-width: 300px;
+         max-width: 250px;
          height:auto;
          margin: auto;
+         display: block;
     }
-    .OurCompany,
-    .fix,
-    .delivery,
-    .visit{
-        position: relative;
-        margin-top: 50px;
-    }
+
     .navdiv li{
         display: inline;
        margin-left: 5px;
@@ -284,10 +289,19 @@ label{
         text-shadow: 0 1px 2px #000;
         flex-direction: column;
     }
+    .information,
+    .information2,
+    .information3,
+    .information4
+    {
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+    }
     .boss{
         width: 400px;
     }
     .for{
         padding-left: 19rem;
     }}
- 
+    
